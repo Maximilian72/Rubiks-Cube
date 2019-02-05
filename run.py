@@ -11,6 +11,9 @@ import cube
 
 # program loop
 while True:
-    pass
+
+    # Instantiate cube
+    theCube = cube()
+
 
 
