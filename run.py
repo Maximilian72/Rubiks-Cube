@@ -22,32 +22,65 @@ def main():
 
     # Program loop
     while True:
+
+        displayHeader()
         print("Would you like to:\n1. Use shuffled cube.\n2. Use your own values.\n3. Use completed cube.")
         choice = input("Choice: ")
 
         if choice == 1:
-            shuffledCube()
+            theCube.shuffle()
         elif choice == 2:
             userValues()
         elif choice == 3:
-            completedCube()
+            theCube.restore()
         else:
             print("You must enter a 1, 2, or 3")
-
-
-
-    def shuffledCube():
-        ''' Shuffle the Cube. '''
-
-        pass
 
     def userValues():
         ''' For the user to enter their own values. '''
 
-        pass
+        # Dictionairies for holding square colours for each side on cube.
+        white = {}
+        red = {}
+        yellow = {}
+        orange = {}
+        green = {}
+        blue = {}
 
-    def completedCube():
-        ''' For the user to play with a completed cube. '''
+        # Gather colours for white side
+        print("With white facing forward and blue facing up, enter the color of each square on white side in the following order;")
+        for i in range(8):
+            print(i+".", end ="")
+            white.update({i:input("Colour: ")})
 
-        pass
+        # Gather colours for red side
+        print("Do the same with red forward and blue up: ")
+        for i in range(8):
+            print(i+".", end ="")
+            red.update({i:input("Colour: ")})
+
+        # Gather colours for yellow side
+        print("Do the same with yellow forward and blue up: ")
+        for i in range(8):
+            print(i+".", end ="")
+            yellow.update({i:input("Colour: ")})
+
+        # Gather colours for orange side
+        print("Do the same with orange forward and blue up: ")
+        for i in range(8):
+            print(i+".", end ="")
+            orange.update({i:input("Colour: ")})
+
+        # Gather colours for green side
+        print("Do the same with green forward and white up: ")
+        for i in range(8):
+            print(i+".", end ="")
+            green.update({i:input("Colour: ")})
+
+        # Gather colours for blue side
+        print("Do the same with blue forward and yellow up: ")
+        for i in range(8):
+            print(i+".", end ="")
+            blue.update({i:input("Colour: ")})
+
 

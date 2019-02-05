@@ -42,6 +42,12 @@ class Cube:
             if i.colorGetter() == color:
                 pass
 
+    def shuffle(self):
+        pass
+
+    def restore(self):
+        pass
+
 class Side(Cube):
     ''' Class to represent each of the six sides on cube. '''
 
