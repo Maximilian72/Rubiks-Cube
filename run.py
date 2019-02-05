@@ -7,7 +7,7 @@
 
 '''
 
-import cube
+from cube import Cube
 
 def displayHeader():
     ''' For printing game title. '''
@@ -18,7 +18,7 @@ def main():
     ''' Main function contain game loop. '''
 
     # Instantiate cube
-    theCube = cube()
+    theCube = Cube()
 
     # Program loop
     while True:
