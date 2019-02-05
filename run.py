@@ -50,37 +50,37 @@ def main():
         # Gather colours for white side
         print("With white facing forward and blue facing up, enter the color of each square on white side in the following order;")
         for i in range(8):
-            print(i+".", end ="")
-            white.update({i:input("Colour: ")})
+            print(i+".", end="")
+            white.update({i: input("Colour: ")})
 
         # Gather colours for red side
         print("Do the same with red forward and blue up: ")
         for i in range(8):
-            print(i+".", end ="")
-            red.update({i:input("Colour: ")})
+            print(i+".", end="")
+            red.update({i: input("Colour: ")})
 
         # Gather colours for yellow side
         print("Do the same with yellow forward and blue up: ")
         for i in range(8):
-            print(i+".", end ="")
-            yellow.update({i:input("Colour: ")})
+            print(i+".", end="")
+            yellow.update({i: input("Colour: ")})
 
         # Gather colours for orange side
         print("Do the same with orange forward and blue up: ")
         for i in range(8):
-            print(i+".", end ="")
-            orange.update({i:input("Colour: ")})
+            print(i+".", end="")
+            orange.update({i: input("Colour: ")})
 
         # Gather colours for green side
         print("Do the same with green forward and white up: ")
         for i in range(8):
-            print(i+".", end ="")
-            green.update({i:input("Colour: ")})
+            print(i+".", end="")
+            green.update({i: input("Colour: ")})
 
         # Gather colours for blue side
         print("Do the same with blue forward and yellow up: ")
         for i in range(8):
-            print(i+".", end ="")
-            blue.update({i:input("Colour: ")})
+            print(i+".", end="")
+            blue.update({i: input("Colour: ")})
 
 
